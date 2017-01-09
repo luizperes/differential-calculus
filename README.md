@@ -1,2 +1,5 @@
-# differential-calculus
-Some resolutions of differential calculus for SFU MATH 150
+# MATH 150 - SFU - Differential Calculus - Jens Bauch - Spring 2017
+
+> This repository has some resolutions for MATH 150 in LaTeX.
+
+

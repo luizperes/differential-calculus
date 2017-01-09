@@ -1,0 +1,137 @@
+\documentclass{article}
+\usepackage{amsmath}
+
+\title{1.1 Four Ways to Represent a Function}
+\author{Luiz Peres}
+\date{January 9th, 2017}
+
+\begin{document}
+
+\begin{titlepage}
+\maketitle
+\end{titlepage}
+
+1. A box with an open top is to be constructed from a rectangular piece of cardboard with dimensions 18 in. by 30 in. by cutting out equal squares of side x at each corner and then folding up the sides as in the figure. Express the volume V of the box as a function of x.
+\newline\newline
+The volume of a box is given by $L \times W \times H$, thus:
+
+\begin{equation}
+\begin{split}
+    V(x) & = (30 - 2x)(18 - 2x) (x) \\
+    & = 2(15 - x) 2(9 - x) (x) \\ 
+    & = 4(135 - 15x - 9x + x^2) (x) \\
+    & = 4x(135 - 15x - 9x + x^2) \\
+    & = 4x^3 -96x^2 + 540x 
+\end{split}
+\end{equation}
+\newline\newline
+2. If $f(x) = 5x^2 - x + 4$,find the following.
+\newline\newline$f(2) = \space ?$
+\begin{equation}
+\begin{split}
+    f(2) & = 5(2)^2 - 2 + 4 \\
+    & = 5 \times 4 - 2 + 4 \\
+    & = 20 + 2 \\
+    & = 22
+\end{split}
+\end{equation}
+\newline\newline
+$f(-2) = \space ?$
+\begin{equation}
+\begin{split}
+    f(-2) & = 5(-2)^2 - (-2) + 4 \\
+    & = 5 \times 4 + 2 + 4 \\
+    & = 20 + 6 \\
+    & = 26
+\end{split}
+\end{equation}
+\newline\newline
+$f(a) = \space ?$
+\begin{equation}
+    f(a)  = 5a^2 - a + 4
+\end{equation}
+\newline\newline
+$f(-a) = \space ?$
+\begin{equation}
+\begin{split}
+    f(-a) & = 5(-a)^2 - (-a) + 4 \\
+    & = 5a^2 + a + 4
+\end{split}
+\end{equation}
+\newline\newline
+$f(a + 1) = \space ?$
+\begin{equation}
+\begin{split}
+    f(a + 1) & = 5(a + 1)^2 - (a + 1) + 4 \\
+    & = 5 (a + 1)(a + 1) - a - 1 + 4 \\
+    & = 5(a^2 + 2a + 1) - a - 1 + 4 \\
+    & = 5a^2 + 10a + 5 -a + 3 \\
+    & = 5a^2 + 9a + 8
+\end{split}
+\end{equation}
+\newline\newline
+$2f(a) = \space ?$
+\begin{equation}
+\begin{split}
+    2f(a) & = 2\times f(a) \\
+    & = 2 \times (5a^2 - a + 4) \\
+    & = 10a^2 - 2a + 8    
+\end{split}
+\end{equation}
+\newline\newline
+$f(2a) = \space ?$
+\begin{equation}
+\begin{split}
+    f(2a) & = 5(2a)^2 - 2a + 4 \\
+    & = 5(4a^2) - 2a + 4 \\
+    & = 20a^2 -2a + 4     
+\end{split}
+\end{equation}
+\newline\newline
+$f(a^2) = \space ?$
+\begin{equation}
+\begin{split}
+    f(a^2) & = 5(a^2)^2 - a^2 + 4 \\
+    & = 5(a^4) - a^2 + 4 \\
+    & = 5a^4 - a^2 + 4     
+\end{split}
+\end{equation}
+\newline\newline
+$[f(a)]^2 = \space ?$
+\begin{equation}
+\begin{split}
+    [f(a)]^2 & = f(a) ^ 2 \\
+    & = (5a^2 - a + 4)^2 \\
+    & = (5a^2 - a + 4) (5a^2 - a + 4) \\
+    & = 25a^4 - 5a^3 + 20a^2 - 5a^3  + a^2 - 4a + 20a^2 -4a + 16 \\
+    & = 25a^4 - 10a^3 + 41a^2 - 8a + 16
+\end{split}
+\end{equation}
+\newline\newline
+$f(a + h) = \space ?$
+\begin{equation}
+\begin{split}
+    f(a + h) & = 5(a + h)^2 - (a + h) + 4 \\
+    & = 5(a + h)(a + h) - a - h + 4 \\
+    & = 5(a^2 + 2ah + h^2) - a - h + 4 \\
+    & = 5a^2 + 10ah + 5h^2 - a - h + 4
+\end{split}
+\end{equation}
+\newline\newline
+3. Find the domain of the function. (Enter your answer using interval notation.)
+\begin{equation}
+    f(x) = \frac{x + 4}{x^2 - 9}
+\end{equation}
+\newline\newline
+For that, $x^2 - 9 \neq 0$, once we cannot divide by zero. Thus:
+\begin{equation}
+\begin{split}
+    x^2 \neq 9 \\
+    x \neq \sqrt{9} \\
+    x \neq 3
+\end{split}
+\end{equation}
+However, we will need to consider $-3$ as well as: $-3^2=9$.
+So the interval notation is: 
+\[ (-\infty, -3) \cup (-3,3) \cup (3, \infty) \]
+\end{document}
