@@ -1,5 +1,7 @@
 \documentclass{article}
 \usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{pgfplots}
 
 \title{1.1 Four Ways to Represent a Function}
 \author{Luiz Peres}
@@ -134,4 +136,50 @@ For that, $x^2 - 9 \neq 0$, once we cannot divide by zero. Thus:
 However, we will need to consider $-3$ as well as: $-3^2=9$.
 So the interval notation is: 
 \[ (-\infty, -3) \cup (-3,3) \cup (3, \infty) \]
+\newline\newline
+4. Sketch the graph of the function.
+\begin{equation}
+    f(x) = 4x + |4x|
+\end{equation}
+\newline\newline
+We know that $|y| = -y$ for negative numbers and $|y| = y$ for non-negative ones. In other words, it is the positive version of the number, thus:
+\begin{equation}
+\begin{split}
+    f(y) = y + |y| = y + y, \forall x > 0 \\
+    \therefore f(x) = 4x + 4x = 8x, \forall x > 0
+\end{split}
+\end{equation}
+and
+\begin{equation}
+\begin{split}
+    f(y) = y + |y| = -y + y = 0, \forall x < 0 \\
+    \therefore f(x) = -4x + 4x = 0 , \forall x < 0
+\end{split}
+\end{equation}
+and we cannot forget that $a \times b = 0$ when $a=0$ or $b=0$, thus:
+\begin{equation}
+f(x) = 0, x = 0
+\end{equation}
+\begin{tikzpicture}
+\begin{axis}[
+    xlabel={x},
+    ylabel={f(x)},
+    xtick={-3, -2, -1, 0, 1, 2, 3},
+    ytick={0, 8, 16, 24}, 
+]
+\addplot[
+    color=red
+] coordinates{
+    (-3, 0)
+    (-2, 0)
+    (-1, 0)
+    (0, 0)
+    (1, 8)
+    (2, 16)
+    (3, 24)
+};
+\end{axis}
+\end{tikzpicture}
+\newline\newline
+Notes: A functions is said even when $f(x) = f(-x)$, i.e, it is "mirroed" in the y-axis and said odd when $f(x) = -f(x)$ and it passes through the origin.
 \end{document}
