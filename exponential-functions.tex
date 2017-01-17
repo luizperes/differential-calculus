@@ -1,0 +1,129 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{pgfplots}
+
+\title{1.4 Exponential Functions}
+\author{Luiz Peres}
+\date{January 16th, 2017}
+
+\begin{document}
+
+\maketitle
+
+1. Consider the graph of $y=e^x$.\\
+(a) Find the equation of the graph that results from reflecting about the line $y = 3$.\\\\
+\begin{equation}
+\begin{split}
+    y & = e^x\\
+    & \textit{put on zero}\\
+    & = e^x - 3 \\
+    & \textit{now we reflect the graph}\\
+    & = -e^x + 3\\
+    & \textit{then, we move it back to its place (3 positions)}\\
+    & = -e^x + 6\\
+\end{split}
+\end{equation}
+(b) Find the equation of the graph that results from reflecting about the line $x = 5$.\\\\
+\begin{equation}
+\begin{split}
+    y & = e^x\\
+    & \textit{reflect x and put it on zero}\\
+    & = e^{x - 5} \\
+    & \textit{now we reflect the graph}\\
+    & = e^{-x + 5}\\
+    & \textit{then, we move it back to its place (5 positions)}\\
+    & = e^{-x + 10}\\
+\end{split}
+\end{equation}
+\\\\
+2. Find the domain of each function. (Enter your answer using interval notation.)\\
+(a)\\
+\begin{equation}
+\begin{split}
+    f(x) & = \frac{64 - e^{x^2}}{1 - e^{64-x^2}}\\
+    & D_f\textit{ :  $\mathbb{R}, (1 - e^{64-x^2}) \neq 0$}\\
+    & 1 - e^{64-x^2} = 0\\
+    & e^{64-x^2} = 1 | (ln)\\
+    & ln(e^{64-x^2}) = ln(1)\\
+    & 64 - x^2 = 0\\
+    & x^2 = -64\\
+    & x = \sqrt{64}\\
+	&\textit{we must consider -8 and 8, because of the sqrt.}\\
+	&\left(-\infty ,\ -8\right)\cup \left(-8,\ 8\right)\cup \left(8,\ \infty \right)    
+\end{split}
+\end{equation}
+\\\\
+(b)\\
+\begin{equation}
+\begin{split}
+    f(x) & = \frac{3+x}{e^{cos(x)}}\\
+    & \textit{exponential functions are always positive}\\
+    & \therefore\\
+    & (-\infty, \infty)     
+\end{split}
+\end{equation}
+3. Find the exponential function $f(x) = Cb^x$ whose graph is given.\\
+\begin{equation}
+\begin{split}
+    15 & = Cb^x \\
+    C & = \frac{15}{b^1}\\\\
+    135 & = Cb^3 \textit{ switch C and the fraction above}\\
+    135 & = \frac{15b^3}{b}\\
+    135 & = 15b^2\\
+    \frac{135}{15} & = b^2\\
+    b & = \sqrt{9}\\
+    b & = 3\\\\
+    15 & = C\times3^1\\
+    C & = 3\\\\
+    &\textit{The equation is $5(3^x)$}
+\end{split}
+\end{equation}
+4. If $6^x$, show that:\\
+$\frac{f(x+h) - f(x)}{h} = 6x(\frac{6^h-1}{h})$\\\\
+\begin{equation}
+\begin{split}
+    & = \frac{f(x+h) - 6^x}{h}\\
+    & = \frac{6^{x+h}-6^x}{h}\\
+    & = \frac{6^x(6^h)-6^x}{h}\\
+    & = \frac{6^x(6^h - 1)}{h}     
+\end{split}
+\end{equation}
+5. A bacteria culture starts with 300 bacteria and doubles in size every half hour.\\
+(a) How many bacteria are there after 2 hours?\\
+\begin{equation}
+\begin{split}
+    300 & \times 2^4\\
+    300 & \times 16\\
+    & 4800
+\end{split}
+\end{equation}
+(b) How many bacteria are there after $t$ hours?
+\begin{equation}
+\begin{split}
+    300 & \times 2^{2t} \textit{ each hour is worth 2.}
+\end{split}
+\end{equation}
+(c) How many bacteria are there after 40 minutes? (Round your answer to the nearest whole number.)\\
+\begin{equation}
+\begin{split}
+    300 & times 2^{\frac{3}{4}}\\
+    300 & \sqrt[3]{2^4}\\
+    300 & \sqrt[3]{2^3 \times 2}\\
+    600 & \sqrt[3]{2}\\
+    & \approx 756
+\end{split}
+\end{equation}
+(e) Estimate the time for the population to reach 40,000. (Round your answer to one decimal place.)\\
+\begin{equation}
+\begin{split}
+    300 \times 2^{2t} & = 40000\\
+    2^{2t} & = \frac{40000}{300}\\
+    2^{2t} & = \frac{400}{3}\\
+    \log_2(2^{2t}) & = \log_2(\frac{400}{3})\\
+    2t & = \log_2(400) - \log(3)\\
+    t & = \frac{8.642356 - 1.584963}{2}\\
+    & \approx 3.5 
+\end{split}
+\end{equation}
+\end{document}
