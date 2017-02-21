@@ -2,4 +2,3 @@
 
 > This repository has some resolutions for MATH 150 in LaTeX.
 
-Discontinued for now
